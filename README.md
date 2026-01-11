@@ -16,6 +16,7 @@ pip install -r requirements.txt -r requirements-dev.txt
 PYTHONPATH=. pytest -q
 ruff check .
 uvicorn app.main:app --reload
+<<<<<<< HEAD
 ```
 
 ## Container image (GHCR)
@@ -25,3 +26,5 @@ docker run --rm -p 8000:8000 ghcr.io/adhityaramadhana/secure-ghcr-release-demo:l
 curl http://localhost:8000/health
 curl http://localhost:8000/version
 ```
+=======
+>>>>>>> 943f058e169627149dcb2ea6988c8e67b0e0c544
